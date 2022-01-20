@@ -21,7 +21,6 @@ app.get('/', (req,res) => {
             var list = ''
             Object.keys(result).forEach(function(key) {
                 var row = result[key];
-                console.log('Row', row)
                 list = list + '<br/>- ' + row.name
             });
             
